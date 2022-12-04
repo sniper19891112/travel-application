@@ -1,0 +1,29 @@
+{
+	"name": "travel-application",
+	"version": "1.0.0",
+	"main": "server.js",
+	"repository": "https://github.com/JoshBowdenConcepts/travel-application.git",
+	"author": "Josh Bowden <joshbowdenconcepts@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"test": "nodemon index.js & yarn run cypress open",
+		"start": "nodemon index.js",
+		"quickTest": "yarn start & yarn run cypress run"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cloudinary": "^1.14.0",
+		"cookie-parser": "^1.4.4",
+		"express": "^4.16.4",
+		"express-fileupload": "^1.1.5",
+		"express-graphql": "^0.8.0",
+		"graphql": "^14.2.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.5.3"
+	},
+	"devDependencies": {
+		"cypress": "^3.2.0",
+		"nodemon": "^1.18.11"
+	}
+}
